@@ -1,0 +1,114 @@
+body {
+    background: green;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  /* Define the styles for the subtopic icons */
+  .subtopic {
+    padding-top: 80px;
+    position: absolute;
+    animation: moveUp 5s infinite; /* Adjust the animation properties as needed */
+    padding-left: 20%;
+  }
+  .subtopic2 {
+    padding-top: 80px;
+    position: absolute;
+    animation: moveDown 5s infinite; /* Adjust the animation properties as needed */
+    padding-left: 75%;
+  }
+  .circle {
+    position: absolute;
+    width: 20px; /* Adjust the circle size as needed */
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FFFFFF; /* Set the circle color */
+    animation: moveCircle linear infinite; /* Adjust the animation properties as needed */
+  }
+  #circle-container2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    animation: rotateCircle 4s infinite linear;
+    transform-origin: center;
+  }
+  
+  #circle-picture {
+    width: 100%;
+    height: 100%;
+    transform: scale(3)
+  }
+  
+  @keyframes rotateCircle {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes moveCircle {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(100vw, 100vh);
+    }
+  }
+  
+  @keyframes moveUp {
+    0% {
+        transform: translateY(100%);
+    }
+    50% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+  }
+  @keyframes moveDown {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+  }
+  #section {
+    position: relative;
+    background-color: #d9f4e7; /* Initial background color */
+    overflow: hidden;
+    padding: 20px; /* Adjust the padding as needed */
+  }
+  @keyframes animatedBackground {
+    0% {
+      background-color: #d9f4e7; /* Initial background color */
+    }
+    50% {
+      background-color: #a4e6c7; /* Intermediate background color */
+    }
+    100% {
+      background-color: #d9f4e7; /* Initial background color */
+    }
+  }
+  
+  .animated {
+    animation: animatedBackground 10s infinite;
+  }
+  
+  #goal-description {
+    font-size: 18px; /* Adjust the font size as needed */
+    color: #000000; /* Set the text color */
+    transition: opacity 0.5s; /* Add a smooth transition effect */
+  }
+
